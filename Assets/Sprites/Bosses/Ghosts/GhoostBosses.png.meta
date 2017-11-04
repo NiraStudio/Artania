@@ -1,0 +1,266 @@
+fileFormatVersion: 2
+guid: 6c826cd1f23bb2e4085db748dfc7075b
+timeCreated: 1506556259
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GhoostBosses_0
+    21300002: GhoostBosses_1
+    21300004: GhoostBosses_2
+    21300006: GhoostBosses_3
+    21300008: GhoostBosses_4
+    21300010: GhoostBosses_5
+    21300012: GhoostBosses_6
+    21300014: GhoostBosses_7
+    21300016: GhoostBosses_8
+    21300018: GhoostBosses_9
+    21300020: GhoostBosses_10
+    21300022: GhoostBosses_11
+    21300024: GhoostBosses_12
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GhoostBosses_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 551
+        width: 210
+        height: 437
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GhoostBosses_1
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 812
+        width: 88
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GhoostBosses_2
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 840
+        width: 103
+        height: 105
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GhoostBosses_3
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 588
+        width: 110
+        height: 192
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GhoostBosses_4
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 539
+        width: 86
+        height: 194
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GhoostBosses_5
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 584
+        width: 104
+        height: 205
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GhoostBosses_6
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 564
+        width: 95
+        height: 239
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GhoostBosses_7
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 277
+        width: 95
+        height: 239
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GhoostBosses_8
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 16
+        width: 270
+        height: 552
+      alignment: 9
+      pivot: {x: 0.50185186, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GhoostBosses_9
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 257
+        width: 89
+        height: 157
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GhoostBosses_10
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 0
+        width: 270
+        height: 551
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49909255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GhoostBosses_11
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 22
+        width: 104
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GhoostBosses_12
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 65
+        width: 102
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 98733670652836
+  assetBundleName: 
+  assetBundleVariant: 

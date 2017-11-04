@@ -1,0 +1,577 @@
+fileFormatVersion: 2
+guid: ba3e5ea563f19744db8fb8a357fd83eb
+timeCreated: 1506840182
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: UiPack3_0
+    21300002: UiPack3_1
+    21300004: UiPack3_2
+    21300006: UiPack3_3
+    21300008: UiPack3_4
+    21300010: UiPack3_5
+    21300012: UiPack3_6
+    21300014: UiPack3_7
+    21300016: UiPack3_8
+    21300018: UiPack3_9
+    21300020: UiPack3_10
+    21300022: UiPack3_11
+    21300024: UiPack3_12
+    21300026: UiPack3_13
+    21300028: UiPack3_14
+    21300030: UiPack3_15
+    21300032: UiPack3_16
+    21300034: UiPack3_17
+    21300036: UiPack3_18
+    21300038: UiPack3_19
+    21300040: UiPack3_20
+    21300042: UiPack3_21
+    21300044: UiPack3_22
+    21300046: UiPack3_23
+    21300048: UiPack3_24
+    21300050: UiPack3_25
+    21300052: UiPack3_26
+    21300054: UiPack3_27
+    21300056: UiPack3_28
+    21300058: UiPack3_29
+    21300060: UiPack3_30
+    21300062: UiPack3_31
+    21300064: UiPack3_32
+    21300066: UiPack3_33
+    21300068: UiPack3_34
+    21300070: UiPack3_35
+    21300072: UiPack3_36
+    21300074: UiPack3_37
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UiPack3_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1579
+        width: 591
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_1
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 1731
+        width: 203
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_2
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 1784
+        width: 194
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_3
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1782
+        width: 193
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_4
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 1786
+        width: 197
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_5
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 1786
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_6
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1786
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_7
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1581
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_8
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1577
+        width: 295
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_9
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 1535
+        width: 246
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_10
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 1546
+        width: 499
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_11
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1253
+        width: 428
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_12
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1250
+        width: 427
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_13
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 1253
+        width: 429
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_14
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 1253
+        width: 427
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_15
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 1278
+        width: 87
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 952
+        width: 428
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_20
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 952
+        width: 430
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_21
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 952
+        width: 431
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_22
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 953
+        width: 430
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_23
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 1042
+        width: 182
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_24
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 495
+        width: 629
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_25
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 489
+        width: 638
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_26
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 718
+        width: 631
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_27
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 489
+        width: 629
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_28
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 234
+        width: 387
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_29
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 234
+        width: 388
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_30
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 235
+        width: 389
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_31
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 234
+        width: 391
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_32
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 11
+        width: 194
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_33
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 11
+        width: 191
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_34
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 1
+        width: 190
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_35
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 5
+        width: 178
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_36
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 2
+        width: 173
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UiPack3_37
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 0
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

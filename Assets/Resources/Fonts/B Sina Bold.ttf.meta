@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 18f9a303f6656ea48b98b23426eb5e50
+timeCreated: 1506588500
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: B Sina
+  fontNames:
+  - B Sina
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

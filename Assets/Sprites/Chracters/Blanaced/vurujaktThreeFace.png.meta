@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: 9b9bf29ad1862e941928ba73865a7763
+timeCreated: 1503908703
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: vurujaktThreeFace_0
+    21300002: vurujaktThreeFace_1
+    21300004: vurujaktThreeFace_2
+    21300006: vurujaktThreeFace_3
+    21300008: vurujaktThreeFace_4
+    21300010: vurujaktThreeFace_5
+    21300012: vurujaktThreeFace_6
+    21300014: vurujaktThreeFace_7
+    21300016: vurujaktThreeFace_8
+    21300018: vurujaktThreeFace_9
+    21300020: vurujaktThreeFace_10
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 300
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vurujaktThreeFace_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 726
+        width: 179
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: vurujaktThreeFace_1
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 777
+        width: 332
+        height: 223
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.50448436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: vurujaktThreeFace_2
+      rect:
+        serializedVersion: 2
+        x: 650.9045
+        y: 768.0134
+        width: 349.09552
+        height: 231.98657
+      alignment: 9
+      pivot: {x: 0.49870452, y: 0.5236793}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: vurujaktThreeFace_3
+      rect:
+        serializedVersion: 2
+        x: 48.74489
+        y: 295
+        width: 218.99998
+        height: 321
+      alignment: 9
+      pivot: {x: 0.5011649, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: vurujaktThreeFace_4
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 485
+        width: 216
+        height: 224
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: vurujaktThreeFace_5
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 581
+        width: 240
+        height: 181
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: vurujaktThreeFace_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 360
+        width: 129
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: vurujaktThreeFace_7
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 355
+        width: 325
+        height: 217
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: vurujaktThreeFace_8
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 67
+        width: 242
+        height: 198
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: vurujaktThreeFace_9
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 59
+        width: 200
+        height: 274
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: vurujaktThreeFace_10
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 58
+        width: 219
+        height: 239
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 98560160506741
+  assetBundleName: 
+  assetBundleVariant: 

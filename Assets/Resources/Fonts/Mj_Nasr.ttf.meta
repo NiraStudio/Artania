@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: afa34ee529a3dc94bbbe111ba1650a9c
+timeCreated: 1506843645
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Mj_Nasr
+  fontNames:
+  - Mj_Nasr
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
