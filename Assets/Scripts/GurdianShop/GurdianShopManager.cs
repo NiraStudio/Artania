@@ -77,7 +77,7 @@ public class GurdianShopManager : AlphaScript
             if (GameManager.Instance.characterData.GurdianId == p.Id)
             {
 
-                GameObject a= Instantiate(p.Shape.gameObject, shapePlace.transform);a.transform.localPosition = Vector2.zero;
+                GameObject a= Instantiate(p.Prefab.gameObject, shapePlace.transform);a.transform.localPosition = Vector2.zero;
                 a.SetActive(true);
                 g.transform.GetChild(2).gameObject.SetActive(true);
                 Des.text = GameManager.Language(p.PersianDes, p.EnglishDes, Des);

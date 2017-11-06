@@ -49,7 +49,7 @@ public class GurdianClass
     public string ENName,PRName;
     public int Id;
     public Gurdian.GurdianModel Kind;
-    public GameObject Shape;
+    public GameObject Prefab;
     public Sprite Image;
     public Price Price;
     public int lvlNeed;

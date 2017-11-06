@@ -60,15 +60,17 @@ public class FinishCounter : AlphaScript
     }
     public void ReStartGame()
     {
-        GameManager.Instance.ChangeGem(-1);
+        if (PlayerPrefs.GetInt("FirstTime") != 0)
+            GameManager.Instance.ChangeGem(-1);
+
         Idle();
         start = false;
         GameObject.FindWithTag("Player").GetComponent<Animator>().SetTrigger("Restart");
         GameObject.FindWithTag("Player").GetComponent<BoxCollider2D>().enabled = true;
-        
+
         StartCoroutine(GamePlayManager.Instance.coolDown(true));
         time--;
-        
+
     }
     public void Enter()
     {

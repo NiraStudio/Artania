@@ -25,7 +25,7 @@ public class GurdianBTN : AlphaScript
         GurdianShopManager.Instance.BuyBtn.gameObject.SetActive(false);
         GurdianShopManager.Instance.lockPanel.SetActive(false);
         Destroy(GurdianShopManager.Instance.shapePlace.transform.GetChild(0).gameObject);
-        GameObject a = Instantiate(p.Shape, GurdianShopManager.Instance.shapePlace.transform); a.transform.localPosition = Vector2.zero;
+        GameObject a = Instantiate(p.Prefab, GurdianShopManager.Instance.shapePlace.transform); a.transform.localPosition = Vector2.zero;
         a.SetActive(true);
         if (PlayerPrefs.GetString("Language") == "Persian")
         {
@@ -58,7 +58,7 @@ public class GurdianBTN : AlphaScript
         {
             Button b = GurdianShopManager.Instance.BuyBtn;
             b.gameObject.SetActive(true);
-            b.transform.GetChild(1).gameObject.SetActive(true);
+           b.transform.GetChild(1).gameObject.SetActive(true);
             if (p.Price.type == Price.Type.Coin)
             {
                 if (GameManager.Instance.currencyData.Coin >= p.Price.amount)

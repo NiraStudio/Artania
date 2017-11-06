@@ -21,7 +21,7 @@ public class PlayerHealth : AlphaScript
     void Start()
     {
         coinMulti = EXPMulti = 1;
-        Gurd = GameManager.Instance.gurdianDataBase.GetPlayerById(GameManager.Instance.characterData.GurdianId).Shape;
+        Gurd = GameManager.Instance.gurdianDataBase.GetPlayerById(GameManager.Instance.characterData.GurdianId).Prefab;
         GameObject b = Instantiate(Gurd, GurdianParent);
         b.transform.localPosition = Vector3.zero;
         gurdian = b.GetComponent<Gurdian>();
