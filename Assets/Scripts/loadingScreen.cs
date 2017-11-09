@@ -27,7 +27,7 @@ public class loadingScreen : AlphaScript
     }
     void Start()
     {
-        StartCoroutine(ShowText());
+       // StartCoroutine(ShowText());
     }
     // Update is called once per frame
     public void Show(string SceneName)

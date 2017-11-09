@@ -9,7 +9,7 @@ public class PlayerMoveForward : MonoBehaviour
     public float speed;
     public float maxSpeed;
     float a;
-    [HideInInspector]
+   // [HideInInspector]
     public float s;
     // Use this for initialization
     void Start()

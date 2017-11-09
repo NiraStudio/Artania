@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FrogBoss : MonoBehaviour {
+public class FrogBoss : AlphaScript {
     public GameObject coin;
     public int coinAmount;
     public GameObject[] lines;

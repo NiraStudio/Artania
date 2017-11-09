@@ -25,6 +25,7 @@ public class GurdianBTN : AlphaScript
         GurdianShopManager.Instance.BuyBtn.gameObject.SetActive(false);
         GurdianShopManager.Instance.lockPanel.SetActive(false);
         Destroy(GurdianShopManager.Instance.shapePlace.transform.GetChild(0).gameObject);
+        print("Hello");
         GameObject a = Instantiate(p.Prefab, GurdianShopManager.Instance.shapePlace.transform); a.transform.localPosition = Vector2.zero;
         a.SetActive(true);
         if (PlayerPrefs.GetString("Language") == "Persian")

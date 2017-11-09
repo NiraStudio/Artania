@@ -8,6 +8,7 @@ public class PlayerHealth : AlphaScript
     public Transform GurdianParent;
     public GameObject Gurd;
     public Gurdian gurdian;
+    
     public string HitSoundCode;
     public int Counters, Protected,coinMulti=1,EXPMulti=1;
     public float secondsWaitToDeath;

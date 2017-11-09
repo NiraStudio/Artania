@@ -20,7 +20,9 @@ public class GamePlayManager : AlphaScript {
     public ObscuredFloat Distance;
     public Image iconOne, iconTwo;
     public Text BossKilledNumber;
+    public AudioClip GamePlayMusic, BossMusic;
 
+    AudioSource audiosource;
 
     bool bossFight;
     public int CoinAmount
@@ -45,7 +47,7 @@ public class GamePlayManager : AlphaScript {
 	}
     void Start()
     {
-
+        audiosource = GetComponent<AudioSource>();
         if (PlayerPrefs.GetInt("FirstTime") == 0)
             Tutorial = true;
         if (Tutorial)
@@ -94,18 +96,22 @@ public class GamePlayManager : AlphaScript {
         CoolDown.gameObject.SetActive(false);
         GameObject.FindWithTag("Player").GetComponent<PlayerAttack>().Allower();
         play = true;
-        playSound("GamePlayMusic");
+        
        if(!Tutorial&&!Restart)
             MissionController.Instance.AddToMission(Alpha.MissionSystem.Mission.Type.game, 1);
        if (!bossFight)
        {
           Run = true;
-           playSound("GamePlayMusic");
+          audiosource.loop = true;
+          audiosource.clip = GamePlayMusic;
+          audiosource.Play();
 
        }else
        {
            Run = false;
-           playSound("BossMusic");
+           audiosource.loop = true;
+           audiosource.clip = BossMusic;
+           audiosource.Play();
 
        }
     }
@@ -153,8 +159,9 @@ public class GamePlayManager : AlphaScript {
         enemiesNumber--;
         if (enemiesNumber == 0)
         {
-            stopOne("GamePlayMusic");
-            playSound("BossMusic");
+            audiosource.loop = true;
+            audiosource.clip = BossMusic;
+            audiosource.Play();
             GetComponent<EnemiesController>().respawnBoss();
             bossFight = true;
         }
@@ -167,7 +174,7 @@ public class GamePlayManager : AlphaScript {
     public IEnumerator BossDeath()
     {
         play = false;
-        stopOne("BossMusic");
+        audiosource.Stop();
         //splash
         yield return new WaitForSeconds(1.5f);
 
@@ -203,10 +210,12 @@ public class GamePlayManager : AlphaScript {
                 yield return new WaitForSeconds(1.5f);
                 bossFight = false;
                 splash.gameObject.SetActive(false);
-                playSound("GamePlayMusic");
                 Run = true;
                 play = true;
             }
+            audiosource.loop = true;
+            audiosource.clip = GamePlayMusic;
+            audiosource.Play();
         }
         else
         {
@@ -258,8 +267,6 @@ public class GamePlayManager : AlphaScript {
             GameManager.Instance.saveState();
             PlayerPrefs.SetInt("SetScore", 1);
         }
-        stopOne("GamePlayMusic");
-        stopOne("BossMusic");
         loadingScreen.Instance.Show("MainMenu");
     }
     public void Pause()
