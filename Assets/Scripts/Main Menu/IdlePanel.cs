@@ -167,8 +167,12 @@ public class IdlePanel : MonoBehaviour {
     public int CurrentAmount()
     {
         double a = (DateTime.Now - GameManager.Instance.stateData.GoldGet).TotalSeconds;
+        print(a + " seconds");
         amount =(int)( CPS * a);
+        print(amount +" "+ CPS);
         if (amount > storage)
+            amount = storage;
+        if (amount < 0)
             amount = storage;
         return amount;
 

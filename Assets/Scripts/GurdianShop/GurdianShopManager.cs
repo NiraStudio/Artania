@@ -135,7 +135,8 @@ public class GurdianShopManager : AlphaScript
     }
     public void SelectGurdian()
     {
-        SoundManager.Instance.ButtonSound();
+        playSound("Button");
+
 
         GameManager.Instance.characterData.GurdianId = pl.Id;
         SelectBtn.transform.GetChild(0).GetComponent<Text>().text = "Selected";

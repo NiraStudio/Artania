@@ -203,6 +203,10 @@ public class GamePlayManager : AlphaScript {
                 splash.gameObject.SetActive(false);
 
             }
+            else if (bossKilledNumber >= 7)
+            {
+                loadingScreen.Instance.Show("LastScene");
+            }
             else
             {
                 GetComponent<EnemiesController>().chooseBoss();

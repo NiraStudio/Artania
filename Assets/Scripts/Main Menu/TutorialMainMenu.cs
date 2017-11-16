@@ -35,7 +35,7 @@ public class TutorialMainMenu : AlphaScript
                         {
                             print("Give Prize");
                             PlayerPrefs.SetInt("FirstTime", 1);
-                            GameManager.Instance.ChangeCoin(1000);
+                            GameManager.Instance.ChangeCoin(100);
                             GameManager.Instance.AddEXP(1000);
                         }
                         if (index < TutorialByOrder.Length)

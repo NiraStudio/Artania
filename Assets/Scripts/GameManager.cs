@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
                 saveCurrency();
                 saveState();
                 PlayerPrefs.SetInt("Meat", 0);
-                PageName = "Play";
+                PageName = "Entro";
                 PlayerPrefs.SetString("Language", "Persian");
             }
             else

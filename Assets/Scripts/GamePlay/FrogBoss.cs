@@ -15,7 +15,7 @@ public class FrogBoss : AlphaScript {
     int LineId=1;
 	// Use this for initialization
 	IEnumerator Start () {
-        coinAmount =(int)( PlayerAttack.instance.damage * 20);
+        coinAmount =(int)( PlayerAttack.instance.damage * 5);
         lines = new GameObject[3];
         for (int i = 0; i < 3; i++)
         {
