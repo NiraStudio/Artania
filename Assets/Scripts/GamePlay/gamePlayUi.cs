@@ -7,7 +7,7 @@ public class gamePlayUi : MonoBehaviour {
     public static gamePlayUi Instance;
     public GamePlayManager gamePlayeManager;
     public Transform ControllerParent;
-    public Text EnemiesText;
+    public UPersian.Components.RtlText EnemiesText;
     public GameObject Coin;
     public GameObject CoinParent,SuperPowerParent;
     public GameObject shieldImage;
@@ -20,9 +20,9 @@ public class gamePlayUi : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
         if (gamePlayeManager.enemiesNumber == 0)
-            EnemiesText.text = EnemiesController.Instance.BossName();
+            EnemiesText.text = GameManager.Language(EnemiesController.Instance.boss.GetComponent<Boss>().persianName, EnemiesController.Instance.boss.GetComponent<Boss>().BossName, EnemiesText);
         else
-            EnemiesText.text = GameManager.NumberPersian( gamePlayeManager.enemiesNumber.ToString(),EnemiesText);
+            EnemiesText.text = GameManager.NumberPersian(gamePlayeManager.enemiesNumber.ToString(), EnemiesText);
 	}
     
     public void EnemyTextActive(bool active)

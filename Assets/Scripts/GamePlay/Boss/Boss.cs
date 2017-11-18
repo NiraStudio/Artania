@@ -15,7 +15,7 @@ public class Boss : AlphaScript {
     public static Boss Instance;
 
     public Sprite icon;
-    public string BossName;
+    public string BossName,persianName;
     public Type BossType;
     public bool Shield;
     public bool Tutorial;
@@ -140,12 +140,12 @@ public class Boss : AlphaScript {
         
         Destroy(gameObject);
     }
-    public void RenewState()
+    /*public void RenewState()
     {
         Hp = Hp + ((Hp * 0.5f) * GamePlayManager.Instance.bossKilledNumber);
         float a =(coinAmount + (coinAmount * (0.1f * GamePlayManager.Instance.bossKilledNumber))) + (coinAmount * (0.25f * (int)(GameManager.Instance.stateData.lvl / 8)));
         coinAmount = (int)a;
-    }
+    }*/
 
     public void Shake()
     {

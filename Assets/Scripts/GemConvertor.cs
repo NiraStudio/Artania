@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UPersian.Components;
 public class GemConvertor : MonoBehaviour {
     public int gem, coin;
-    public Animator quiestionPanel;
+    public Animator quiestionPanel,dontHaveEnough;
     public RtlText text,coinAmount,GemAmount;
 	// Use this for initialization
 	void Start () {
@@ -24,9 +24,20 @@ public class GemConvertor : MonoBehaviour {
     }
     public void OnClick()
     {
-        text.text = GameManager.Language("از این خرید مطمئنی؟", "Are you sure?", text);
-        quiestionPanel.SetTrigger("Enter");
-        GemConvertorPanel.Instance.currentRate = this;
+        if (GameManager.Instance.currencyData.Gem >= gem)
+        {
+            text.text = GameManager.Language("از این خرید مطمئنی؟", "Are you sure?", text);
+            quiestionPanel.gameObject.transform.GetChild(1).GetComponent<Button>().interactable = true;
+
+            quiestionPanel.SetTrigger("Enter");
+            GemConvertorPanel.Instance.currentRate = this;
+        }
+        else
+        {
+            text.text = GameManager.Language("جم کافی نداری", "You dont have enough gem", text);
+            quiestionPanel.gameObject.transform.GetChild(1).GetComponent<Button>().interactable = false;
+            quiestionPanel.SetTrigger("Enter");
+        }
         
     }
     public void QuestionPanelExit()
@@ -36,8 +47,11 @@ public class GemConvertor : MonoBehaviour {
     }
     public void Convert()
     {
-        GameManager.Instance.ChangeGem(-gem);
-        GameManager.Instance.ChangeCoin(coin);
-        QuestionPanelExit();
+        if (GameManager.Instance.currencyData.Gem >= gem)
+        {
+            GameManager.Instance.ChangeGem(-gem);
+            GameManager.Instance.ChangeCoin(coin);
+            QuestionPanelExit();
+        }
     }
 }

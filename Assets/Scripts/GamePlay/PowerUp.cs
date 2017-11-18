@@ -21,6 +21,8 @@ public class PowerUp : AlphaScript
     {
         aud = GetComponent<AudioSource>();
         player = PlayerHealth.Instance.gameObject;
+        if (Gurdian)
+            GetComponent<SpriteRenderer>().sprite = PlayerHealth.Instance.gurdSprite;
         Destroy(gameObject, 3f);
     }
     void Update()

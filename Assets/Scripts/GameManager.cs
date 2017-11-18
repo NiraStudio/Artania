@@ -119,6 +119,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     public void ChangeCoin(int amount)
     {
+        if(amount<0)
+            MissionController.Instance.AddToMission(Alpha.MissionSystem.Mission.Type.SpendMoney, amount*-1);
+        else if (amount > 0)
+            MissionController.Instance.AddToMission(Alpha.MissionSystem.Mission.Type.coin, amount);
         currencyData.Coin += amount;
         saveCurrency();
     }

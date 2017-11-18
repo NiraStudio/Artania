@@ -9,12 +9,12 @@ public class EnemiesController : MonoBehaviour
     public float MinTime, maxTime;
     public Transform[] Positions;
     public GameObject[] bosses;
-    public GameObject[] enemies;
+    public GameObject[] enemies,tapal;
     public bool allow = true;
     public Light[] Lights;
     List<Transform> freePlaces = new List<Transform>();
     List<GameObject> Enemies = new List<GameObject>();
-    GameObject boss;
+    public GameObject boss;
     int index = 0;
     float aveCoin, aveExp, aveHp;
 

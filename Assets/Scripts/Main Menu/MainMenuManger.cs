@@ -26,8 +26,10 @@ public class MainMenuManger : AlphaScript {
     [Header("Medals")]
     public Image medal;
     public Sprite[] Medals;
+    public Sprite gem, coin;
     float CurrentCoin, CurrentGem,currentXP;
     bool play;
+    Sprite asprite;
     IEnumerator Start()
     {
         instance = this;
@@ -130,10 +132,23 @@ public class MainMenuManger : AlphaScript {
             missions[i].transform.GetChild(3).gameObject.SetActive(false);
             missions[i].transform.GetChild(0).GetComponent<RtlText>().text = GameManager.Language(MissionController.Instance.missions[i].PersianTitle, MissionController.Instance.missions[i].EnglishTitle, missions[i].transform.GetChild(0).GetComponent<RtlText>());
             missions[i].transform.GetChild(1).GetComponent<RtlText>().text = GameManager.NumberPersian(MissionController.Instance.missions[i].CurrentTimes.ToString(), missions[i].transform.GetChild(1).GetComponent<RtlText>()) + "/" + GameManager.NumberPersian(MissionController.Instance.missions[i].Times.ToString(), missions[i].transform.GetChild(1).GetComponent<RtlText>());
-            missions[i].transform.GetChild(2).GetComponent<RtlText>().text = MissionController.Instance.missions[i].Reward.type + " " + GameManager.NumberPersian(MissionController.Instance.missions[i].Reward.amount.ToString(), missions[i].transform.GetChild(2).GetComponent<RtlText>());
-            if(MissionController.Instance.missions[i].GainReward)
+            missions[i].transform.GetChild(2).GetComponent<RtlText>().text = GameManager.NumberPersian(MissionController.Instance.missions[i].Reward.amount.ToString(), missions[i].transform.GetChild(2).GetComponent<RtlText>());
+            
+            switch (MissionController.Instance.missions[i].Reward.type)
+            {
+                case Alpha.MissionSystem.reward.Type.Gem:
+                    asprite = gem;
+                    break;
+                case Alpha.MissionSystem.reward.Type.Coin:
+                    asprite = coin;
+                    break;
+                case Alpha.MissionSystem.reward.Type.exp:
+                    break;
+            }
+            missions[i].transform.GetChild(4).GetComponent<Image>().sprite = asprite;
+            if (MissionController.Instance.missions[i].GainReward)
                 missions[i].transform.GetChild(3).gameObject.SetActive(true);
-            if(MissionController.Instance.missions[i].isDone&&!MissionController.Instance.missions[i].GainReward)
+            if (MissionController.Instance.missions[i].isDone && !MissionController.Instance.missions[i].GainReward)
                 MissionMark.SetActive(true);
 
         }
@@ -188,7 +203,7 @@ public class MainMenuManger : AlphaScript {
     }
     public void makeNewMissionsGem()
     {
-        if (GameManager.Instance.currencyData.Gem >= 1)
+        if (GameManager.Instance.currencyData.Gem >= 5)
         {
             playSound("Button");
             GameManager.Instance.ChangeGem(-1);    
@@ -284,6 +299,7 @@ public class MainMenuManger : AlphaScript {
     }
     public void OpenShop()
     {
+        GameManager.Instance.ChangeGem(1000);
         Shop.Instance.Enter();
     }
     

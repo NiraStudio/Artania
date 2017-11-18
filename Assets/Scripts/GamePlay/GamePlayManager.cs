@@ -67,15 +67,15 @@ public class GamePlayManager : AlphaScript {
 
         
         #region Boost
-        if (GameManager.Instance.stateData.LastKilledBoss > 3 && GameManager.Instance.coinAmount >= (GameManager.Instance.stateData.LastKilledBoss - 2) * 300)
+        /*if (GameManager.Instance.stateData.LastKilledBoss > 3 && GameManager.Instance.coinAmount >= (GameManager.Instance.stateData.LastKilledBoss - 2) * 300)
         {
             CoolDown.gameObject.transform.GetChild(0).gameObject.SetActive(true);
             CoolDown.gameObject.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = GameManager.NumberPersian(((GameManager.Instance.stateData.LastKilledBoss - 2) * 300).ToString(), CoolDown.gameObject.transform.GetChild(0).GetChild(0).GetComponent<Text>());
-        }
-        if ( GameManager.Instance.coinAmount >= 300)
+        }*/
+        if ( GameManager.Instance.coinAmount >= 30)
         {
             CoolDown.gameObject.transform.GetChild(1).gameObject.SetActive(true);
-            CoolDown.gameObject.transform.GetChild(1).GetChild(0).GetComponent<Text>().text = GameManager.NumberPersian("300", CoolDown.gameObject.transform.GetChild(0).GetChild(0).GetComponent<Text>());
+            CoolDown.gameObject.transform.GetChild(1).GetChild(0).GetComponent<Text>().text = GameManager.NumberPersian("30", CoolDown.gameObject.transform.GetChild(0).GetChild(0).GetComponent<Text>());
         }
 
         #endregion
@@ -205,6 +205,15 @@ public class GamePlayManager : AlphaScript {
             }
             else if (bossKilledNumber >= 7)
             {
+                GameManager.Instance.ChangeCoin((int)CoinAmount);
+                GameManager.Instance.AddEXP(Exp);
+                MissionController.Instance.restart();
+                if (Exp > GameManager.Instance.stateData.HighScore)
+                {
+                    GameManager.Instance.stateData.HighScore = Exp;
+                    GameManager.Instance.saveState();
+                    PlayerPrefs.SetInt("SetScore", 1);
+                }
                 loadingScreen.Instance.Show("LastScene");
             }
             else
@@ -291,7 +300,7 @@ public class GamePlayManager : AlphaScript {
     }
     public void GetGurdian()
     {
-        GameManager.Instance.ChangeCoin(-300);
+        GameManager.Instance.ChangeCoin(-30);
         PlayerHealth.Instance.TurnOnTheGurdian();
         CoolDown.gameObject.transform.GetChild(1).gameObject.SetActive(false);
     }

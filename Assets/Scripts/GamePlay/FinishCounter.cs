@@ -39,8 +39,8 @@ public class FinishCounter : AlphaScript
                 GameManager.Instance.ChangeCoin((int)GamePlayManager.Instance.CoinAmount);
                 print("Coin Amount = " + (int)GamePlayManager.Instance.CoinAmount);
                 GameManager.Instance.AddEXP(GamePlayManager.Instance.Exp);
-                MissionController.Instance.AddToMission(Alpha.MissionSystem.Mission.Type.Exprience, GamePlayManager.Instance.Exp);
-                MissionController.Instance.AddToMission(Alpha.MissionSystem.Mission.Type.coin, GamePlayManager.Instance.CoinAmount);
+                //MissionController.Instance.AddToMission(Alpha.MissionSystem.Mission.Type.Exprience, GamePlayManager.Instance.Exp);
+               // MissionController.Instance.AddToMission(Alpha.MissionSystem.Mission.Type.coin, GamePlayManager.Instance.CoinAmount);
                 MissionController.Instance.restart();
                 if (GamePlayManager.Instance.Exp > GameManager.Instance.stateData.HighScore)
                 {

@@ -8,7 +8,7 @@ public class PlayerHealth : AlphaScript
     public Transform GurdianParent;
     public GameObject Gurd;
     public Gurdian gurdian;
-    
+    public Sprite gurdSprite;
     public string HitSoundCode;
     public int Counters, Protected,coinMulti=1,EXPMulti=1;
     public float secondsWaitToDeath;
@@ -23,6 +23,7 @@ public class PlayerHealth : AlphaScript
     {
         coinMulti = EXPMulti = 1;
         Gurd = GameManager.Instance.gurdianDataBase.GetPlayerById(GameManager.Instance.characterData.GurdianId).Prefab;
+        gurdSprite = Gurd.GetComponent<SpriteRenderer>().sprite;
         GameObject b = Instantiate(Gurd, GurdianParent);
         b.transform.localPosition = Vector3.zero;
         gurdian = b.GetComponent<Gurdian>();
