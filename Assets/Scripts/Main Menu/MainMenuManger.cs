@@ -146,6 +146,7 @@ public class MainMenuManger : AlphaScript {
                     break;
             }
             missions[i].transform.GetChild(4).GetComponent<Image>().sprite = asprite;
+            print("Sprite is " + asprite.name);
             if (MissionController.Instance.missions[i].GainReward)
                 missions[i].transform.GetChild(3).gameObject.SetActive(true);
             if (MissionController.Instance.missions[i].isDone && !MissionController.Instance.missions[i].GainReward)

@@ -46,7 +46,7 @@ public class PlayerDataBase : ScriptableObject {
 [System.Serializable]
 public class Player
 {
-    public string Name;
+    public string Name,PersianName;
     public int Id;
     public Color color;
     public GameObject Shape;

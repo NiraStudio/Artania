@@ -17,7 +17,7 @@ public class characterState : MonoBehaviour {
             MaxMana.transform.GetChild(i).GetComponent<Image>().color = baseColor;
             
         }
-        CharacterName.text = a.Name;
+        CharacterName.text = GameManager.Language(a.PersianName,a.Name,CharacterName);
         for (int i = 0; i < a.Attack; i++)
         {
             Attack.transform.GetChild(i).GetComponent<Image>().color = a.color;

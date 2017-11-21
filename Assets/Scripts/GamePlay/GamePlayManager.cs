@@ -12,7 +12,7 @@ public class GamePlayManager : AlphaScript {
     public Animator splash;
     public bool Tutorial;
     public bool play;
-    public bool Run,seeAd;
+    public bool Run,seeAd,pauseAllow;
     public Text CoinText,EXPText;
     public Text CoolDown;
     public tutorialPanel tutorial;
@@ -114,6 +114,7 @@ public class GamePlayManager : AlphaScript {
            audiosource.Play();
 
        }
+       pauseAllow = true;
     }
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -284,8 +285,11 @@ public class GamePlayManager : AlphaScript {
     }
     public void Pause()
     {
-        Time.timeScale = 0;
-        PausePanel.gameObject.SetActive(true);
+        if (pauseAllow)
+        {
+            Time.timeScale = 0;
+            PausePanel.gameObject.SetActive(true);
+        }
     }
     public void UnPause()
     {

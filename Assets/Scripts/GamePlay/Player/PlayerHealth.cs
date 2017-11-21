@@ -41,10 +41,12 @@ public class PlayerHealth : AlphaScript
     {
         GetComponent<BoxCollider2D>().enabled = false;
 
+        GamePlayManager.Instance.pauseAllow = false;
         GetComponent<Animator>().SetTrigger("Die");
         GamePlayManager.Instance.play = false;
         GamePlayManager.Instance.Run = false;
         yield return new WaitForSeconds(secondsWaitToDeath);
+
         if (PlayerPrefs.GetInt("FirstTime") == 0)
         {
             FinishCounter.Instance.ReStartGame();

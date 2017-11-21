@@ -69,7 +69,7 @@ public class IdlePanel : MonoBehaviour {
             StorageUpgrade.interactable = false;
 
         CPSBtnText.text = GameManager.Instance.stateData.CoinPerSecLevel < 7 ? GameManager.NumberPersian(CalculateCPSPrice(coinPerSecLevel).ToString(), CPSBtnText) : GameManager.Language("مرحله آخر","Max Level", CPSBtnText);
-        StorageBtnText.text = GameManager.Instance.stateData.coinerStorageLevel < 7 ? GameManager.NumberPersian(CalculateCPSPrice(storageLevel).ToString(), CPSBtnText) : GameManager.Language("مرحله آخر", "Max Level", StorageBtnText);
+        StorageBtnText.text = GameManager.Instance.stateData.coinerStorageLevel < 7 ? GameManager.NumberPersian(CalculateCPSPrice(storageLevel).ToString(), StorageBtnText) : GameManager.Language("مرحله آخر", "Max Level", StorageBtnText);
         AmountText.text = GameManager.NumberPersian(amount.ToString(), AmountText);
     }
     public void Enter()
@@ -107,16 +107,16 @@ public class IdlePanel : MonoBehaviour {
                 answer = 0.1f;
                 break;
             case 1:
-                answer = 0.3f;
+                answer = 0.2f;
                 break;
             case 2:
-                answer = 0.6f;
+                answer = 0.5f;
                 break;
             case 3:
-                answer = 1f;
+                answer = 0.7f;
                 break;
             case 4:
-                answer = 1.5f;
+                answer = 1f;
                 break;
             case 5:
                 answer = 2;
@@ -137,28 +137,28 @@ public class IdlePanel : MonoBehaviour {
         switch (a)
         {
             case 0:
-                answer = 400;
+                answer = 100;
                 break;
             case 1:
-                answer = 800;
+                answer = 300;
                 break;
             case 2:
-                answer = 1200;
+                answer = 500;
                 break;
             case 3:
-                answer = 2000;
+                answer = 900;
                 break;
             case 4:
-                answer = 2500;
+                answer = 1500;
                 break;
             case 5:
-                answer = 3500;
+                answer = 2500;
                 break;
             case 6:
-                answer = 5000;
+                answer = 4000;
                 break;
             case 7:
-                answer = 10000;
+                answer = 6000;
                 break;
 
         }

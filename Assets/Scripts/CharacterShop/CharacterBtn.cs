@@ -73,7 +73,7 @@ public class CharacterBtn : AlphaScript
             b.transform.GetChild(0).GetComponent<Text>().text = GameManager.NumberPersian(p.Price.amount.ToString(), b.transform.GetChild(0).GetComponent<Text>());
             if (GameManager.Instance.stateData.lvl < p.LvlNeed)
             {
-                playerShopManager.Instance.lockPanel.transform.GetChild(0).GetComponent<Text>().text = p.LvlNeed.ToString();
+                playerShopManager.Instance.lockPanel.transform.GetChild(1).GetComponent<Text>().text = p.LvlNeed.ToString();
                 playerShopManager.Instance.lockPanel.SetActive(true);
             }
 

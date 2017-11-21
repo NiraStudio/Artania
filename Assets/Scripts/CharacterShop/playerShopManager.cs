@@ -119,7 +119,8 @@ public class playerShopManager : AlphaScript
         GameManager.Instance.characterData.charcaterIds.Add(pl.Id);
         BuyBtn.gameObject.SetActive(false);
         SelectBtn.gameObject.SetActive(true);
-        SelectBtn.transform.GetChild(0).GetComponent<Text>().text = "Selected";
+        SelectBtn.transform.GetChild(0).GetComponent<Text>().text = GameManager.Language("انتخاب", "Select",  SelectBtn.transform.GetChild(0).GetComponent<Text>());
+        
         SelectBtn.interactable = false;
 
         //////

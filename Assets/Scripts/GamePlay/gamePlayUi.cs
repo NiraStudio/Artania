@@ -20,7 +20,7 @@ public class gamePlayUi : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
         if (gamePlayeManager.enemiesNumber == 0)
-            EnemiesText.text = GameManager.Language(EnemiesController.Instance.boss.GetComponent<Boss>().persianName, EnemiesController.Instance.boss.GetComponent<Boss>().BossName, EnemiesText);
+            EnemiesText.text = GameManager.Language(EnemiesController.Instance.boss.transform.GetChild(0).GetComponent<Boss>().persianName, EnemiesController.Instance.boss.transform.GetChild(0).GetComponent<Boss>().BossName, EnemiesText);
         else
             EnemiesText.text = GameManager.NumberPersian(gamePlayeManager.enemiesNumber.ToString(), EnemiesText);
 	}

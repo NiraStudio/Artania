@@ -49,8 +49,10 @@ public class FinishCounter : AlphaScript
                     PlayerPrefs.SetInt("SetScore", 1);
                 }
                 Idle();
+                GamePlayManager.Instance.pauseAllow = true;
                 FinishPanel.Instance.startCounting();
                 start = false;
+
             }
         }
     }

@@ -6,17 +6,17 @@ public class EnemiesController : MonoBehaviour
 {
     public static EnemiesController Instance;
     public GameObject TutorialBoss;
-    public float MinTime, maxTime;
+    public float MinTime, maxTime,TapalTime;
     public Transform[] Positions;
     public GameObject[] bosses;
-    public GameObject[] enemies,tapal;
+    public GameObject[] enemies;
     public bool allow = true;
     public Light[] Lights;
     List<Transform> freePlaces = new List<Transform>();
     List<GameObject> Enemies = new List<GameObject>();
-    public GameObject boss;
+    public GameObject boss,tapal;
     int index = 0;
-    float aveCoin, aveExp, aveHp;
+    float aveCoin, aveExp, aveHp,tapalT;
 
     int NotChoosen, number1, number2;
     float time, t;
@@ -119,6 +119,8 @@ public class EnemiesController : MonoBehaviour
             index = 0;
             allow = true;
             StartCoroutine(Spawn());
+           // StartCoroutine(spawnTapal());
+            tapalT = TapalTime;
             print("Boss Choosed =" + BossName());
         }
         else
@@ -129,6 +131,7 @@ public class EnemiesController : MonoBehaviour
             index = 0;
             allow = true;
             StartCoroutine(Spawn());
+           
             print("Boss Choosed =" + BossName());
         }
         for (int i = 0; i < Lights.Length; i++)
@@ -171,6 +174,17 @@ public class EnemiesController : MonoBehaviour
             }
             StartCoroutine(Spawn());
         }
+    }
+    public IEnumerator spawnTapal()
+    {
+        if(tapalT>=2)
+        tapalT -= 1;
+        yield return new WaitForSeconds(tapalT);
+        Transform t = Positions[Random.Range(0, Positions.Length)];
+        GameObject e = Instantiate(tapal,t);
+        e.transform.localPosition = e.GetComponent<Enemy>().SPoint;
+        e.GetComponent<Enemy>().reNewState(0, 0, aveHp);
+        StartCoroutine(spawnTapal());
     }
     public void respawnBoss()
     {

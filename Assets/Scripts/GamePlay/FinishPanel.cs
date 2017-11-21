@@ -115,6 +115,7 @@ public class FinishPanel : AlphaScript
     }
     public void ReStart()
     {
+        Time.timeScale = 1;
         stopOne("GamePlayMusic");
         stopOne("BossMusic");
         loadingScreen.Instance.Show("Play");
