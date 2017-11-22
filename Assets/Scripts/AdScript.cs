@@ -94,6 +94,7 @@ public class AdScript : AlphaScript
     }
     public void SHowAd()
     {
+        Time.timeScale = 0;
         TapsellShowOptions showOptions = new TapsellShowOptions();
         showOptions.backDisabled = true;
         showOptions.immersiveMode = false;
@@ -121,11 +122,13 @@ public class AdScript : AlphaScript
                     break;
 
             }
+            Time.timeScale = 1;
             MissionController.Instance.AddToMission(Alpha.MissionSystem.Mission.Type.WatchVideo, 1);
             if (MainMenuManger.instance)
                 MainMenuManger.instance.loadMissions();
             HaveAd = false;
             findAd();
+
         }
 );
         Tapsell.showAd(AdID, showOptions);
