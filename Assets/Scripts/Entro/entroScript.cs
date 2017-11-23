@@ -22,13 +22,15 @@ public class entroScript : MonoBehaviour {
 #else
         MovieImg.texture = movie;
     loadingScreen.Instance.Disapear();
-        movie.Play();
+        //movie.Play();
+        loadingScreen.Instance.Show("Play");
+
 #endif
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 }

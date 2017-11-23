@@ -15,7 +15,7 @@ public class ShooterBoss : Boss {
 
      
     GameObject Player;
-    float T;
+    float T,maxhp;
     int Times;
     // Use this for initialization
     void Start() {
@@ -23,6 +23,7 @@ public class ShooterBoss : Boss {
         Times = (int)Random.Range(MinAttack, maxAttack);
         Player = GameObject.FindWithTag("Player");
         shieldImage.SetActive(true);
+        maxhp = Hp;
 
     }
 	
@@ -53,12 +54,13 @@ public class ShooterBoss : Boss {
         Shield = true;
         shieldImage.SetActive(true);
 
-        if(Hp<=Hp/2)
+        if(Hp<=maxhp/2&&waitTime>0.3f)
         {
-            waitTime = 0.5f;
+            waitTime = 0.3f;
+            maxAttack *= 2;
+            MinAttack *= 2;
         }
-        if (Hp <= (Hp / 2))
-            waitTime = 0.5f;
+        
     }
     public void Shoot()
     {

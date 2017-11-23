@@ -7,7 +7,7 @@ public class LastSceneBehavior : MonoBehaviour {
 	// Use this for initialization
 	IEnumerator Start () {
         loadingScreen.Instance.Disapear();
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(6);
         loadingScreen.Instance.Show("MainMenu");
 	}
 	
