@@ -300,7 +300,6 @@ public class MainMenuManger : AlphaScript {
     }
     public void OpenShop()
     {
-        GameManager.Instance.ChangeGem(1000);
         Shop.Instance.Enter();
     }
     
