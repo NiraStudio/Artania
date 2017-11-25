@@ -67,7 +67,6 @@ namespace Alpha.MissionSystem
                 isDone = true;
                 Debug.Log(EnglishTitle + " Finished");
                 MissionCompelete.Instance.Repaint(GameManager.Language(PersianTitle, EnglishTitle));
-
             }
 
         }

@@ -7,6 +7,7 @@ using UPersian.Components;
 public class Shop : MonoBehaviour {
     public static Shop Instance;
     public Text[] Infos;
+    public Text ShopName;
     Animator anim;
 	// Use this for initialization
 	void Start () {
@@ -29,7 +30,9 @@ public class Shop : MonoBehaviour {
         {
             string a = Infos[i].text;
             Infos[i].text =NumberPersian(a, Infos[i]);
+
         }
+        ShopName.text = GameManager.Language("فروشگاه", "Shop", ShopName);
         anim.SetTrigger("Enter");
     }
     public string NumberPersian(string number, Text t)

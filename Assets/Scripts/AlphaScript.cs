@@ -22,6 +22,7 @@ public class AlphaScript : MonoBehaviour {
     }
     public void Shake()
     {
+        Handheld.Vibrate();
         Camera.main.transform.parent.GetComponent<Animator>().SetTrigger("EarthShake");
     }
     public void OpenGemPanel()

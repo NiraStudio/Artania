@@ -62,6 +62,7 @@ public class PlayerHealth : AlphaScript
 
         if (!powerUpManager.Instance.superPower)
         {
+
             if (Counters == 2)
             {
                 if (!unCounterable)
@@ -133,6 +134,7 @@ public class PlayerHealth : AlphaScript
                 if (!unCounterable)
                     b.Die();
             }
+            Handheld.Vibrate();
 
         }
         else

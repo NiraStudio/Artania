@@ -123,9 +123,13 @@ public class Bullet : AlphaScript
                     if (GamePlayManager.Instance.play&&!powerUpManager.Instance.superPower)
                     {
                         if (GamePlayManager.Instance.Exp >= dmg)
+                        {
                             GamePlayManager.Instance.Exp -= (int)dmg;
+                            Handheld.Vibrate();
+
+                        }
                         else
-                        target.GetComponent<PlayerHealth>().die(this, true);
+                            target.GetComponent<PlayerHealth>().die(this, true);
 
                     }
                     Die();

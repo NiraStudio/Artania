@@ -9,6 +9,7 @@ public class FinishCounter : AlphaScript
     public float MaxTime;
     public Slider Timer;
     public Button ExtraLifeBtn;
+    public Text TimerNumber;
     Animator anim;
     bool start;
     float t;
@@ -33,6 +34,7 @@ public class FinishCounter : AlphaScript
         {
             t -= Time.deltaTime;
             Timer.value = t;
+            TimerNumber.text = GameManager.NumberPersian(t.ToString("#"), TimerNumber);
             if (t <= 0)
             {
 

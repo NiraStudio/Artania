@@ -147,10 +147,7 @@ public class Boss : AlphaScript {
         coinAmount = (int)a;
     }*/
 
-    public void Shake()
-    {
-        Camera.main.transform.parent.GetComponent<Animator>().SetTrigger("EarthShake");
-    }
+    
     public void playSound(string soundName){
         AudioManager.Instance.PlaySound(soundName);
     }
