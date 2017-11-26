@@ -33,6 +33,12 @@ public class AdScript : AlphaScript
 	
 	// Update is called once per frame
 	void Update () {
+        if(!InternetChecker.Instance.internetConnectBool)
+        {
+            GetComponent<Button>().interactable = true;
+            return;
+        }
+
         if (HaveAd)
             GetComponent<Button>().interactable = true;
         else
